@@ -4,28 +4,28 @@
 
 @font-face {
     font-family: 'Android';
-    src: url('../fontes/idroid.otf') format('opentype') ;
+    src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
 @keyframes pulsate {
-    3%{
-        box-shadow: 
-        0 0 25px var(--cor2),
-        0 0 25px var(--cor3);
+    3% {
+        box-shadow:
+            0 0 25px var(--cor2),
+            0 0 25px var(--cor3);
     }
 }
 
 @keyframes pulsate2 {
-    3%{
-        box-shadow: 
-        0 0 20px var(--cor0),
-        0 0 20px var(--cor1);
+    3% {
+        box-shadow:
+            0 0 20px var(--cor0),
+            0 0 20px var(--cor1);
     }
 }
 
 
-:root{
+:root {
     --cor0: #afdab7;
     --cor1: #68c479;
     --cor2: #1aaa35;
@@ -42,28 +42,31 @@
     padding: 0px;
 
 }
-body{
-    background-image: linear-gradient(180deg, #bddbc3,#ddf7d8);
+
+body {
+    background-image: linear-gradient(180deg, #bddbc3, #ddf7d8);
     font-family: var(--fonte-padrao);
 }
-a.externo::after{
+
+a.externo::after {
     content: '\00A0\1F517';
 }
 
-main p{
+main p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
     line-height: 1.2em;
 }
-main strong{
+
+main strong {
     color: #01380b;
     font-weight: bold;
     padding: 2px 6px;
 }
 
-main a{
+main a {
     text-decoration: none;
     color: #01380b;
     background-color: #beddc3;
@@ -72,23 +75,24 @@ main a{
 }
 
 
-main a:hover{
+main a:hover {
     text-decoration: underline;
     color: rgb(181, 235, 156);
     background-color: var(--cor1);
     animation: pulsate2 1s ease-in-out;
-    
+
 
 }
 
-header{
+header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
-    
+
 }
-header p{
+
+header p {
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
@@ -108,23 +112,24 @@ header h1 {
     font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 3px 3px 1px #000000d2;
-    
+
 }
 
-nav{
-    
+nav {
+
     padding: 10px;
     box-shadow: 0px 5px 10px rgba(3, 26, 5, 0.596);
 
 }
 
 
-nav > a:hover {
-        color: var(--cor1);
-        background-color: var(--cor3);
-        animation: pulsate 1s ease-in-out;
+nav>a:hover {
+    color: var(--cor1);
+    background-color: var(--cor3);
+    animation: pulsate 1s ease-in-out;
 }
-nav > a{
+
+nav>a {
     color: #c5dac9;
     padding: 10px;
     text-decoration: none;
@@ -132,21 +137,24 @@ nav > a{
     font-weight: bold;
 
 }
-main{
+
+main {
     background-color: rgba(208, 218, 210, 0.89);
     padding: 25px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     min-width: 320px;
     max-width: 920px;
-    margin: auto;    
+    margin: auto;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.596);
     margin-bottom: 30px;
 }
-main img{
+
+main img {
     width: 100%;
 }
-main img.pequena{
+
+main img.pequena {
     max-width: 350px;
     display: block;
     margin: auto;
@@ -164,9 +172,10 @@ main h2 {
     font-size: 1.3em;
     color: var(--cor5);
     font-family: var(--fonte-android);
-    background-image: linear-gradient(to right, var(--cor0), transparent );
+    background-image: linear-gradient(to right, var(--cor0), transparent);
     text-indent: 10px;
 }
+
 div.video {
     background-color: #01380b;
     margin: 0px -20px 30px -20px;
@@ -174,7 +183,8 @@ div.video {
     padding-bottom: 56.5%;
     position: relative;
 }
-div.video >iframe{
+
+div.video>iframe {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -182,14 +192,15 @@ div.video >iframe{
     height: 90%;
 }
 
-aside{
+aside {
     background-color: #9bc7a3;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 7px #01380b5d;
 }
-aside >h3{
-    background-color:#01380b ;
+
+aside>h3 {
+    background-color: #01380b;
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
@@ -197,25 +208,27 @@ aside >h3{
 
 }
 
-aside > ul{
+aside>ul {
     list-style-type: '\2714\00A0';
     list-style-position: inside;
     columns: 2;
 }
 
-footer{
+footer {
     background-color: var(--cor5);
     color: #c2ddc7;
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
 }
+
 footer a {
     text-decoration: solid;
     font-weight: bold;
     color: rgb(255, 255, 255);
 
 }
+
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
